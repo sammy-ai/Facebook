@@ -19,11 +19,14 @@ function expandSeeMore() {
         more.classList.remove('hidden');
         scroller.classList = "fixed flex-col hidden h-screen px-0 px-2 py-4 overflow-y-auto text-sm bg-gray-100 md:flex lg:pr-48 md:w-3/8 lg:w-1/3";
 
-        // set state of seeMore
+        // set state of showMore
         showMore = true;
     } else {
         seeMore.classList.remove('hidden');
         more.classList.add('hidden');
         seeMore.classList.add('seeMore');
+        
+        // set new state of showMore
+        showMore = false;
     }
 }
